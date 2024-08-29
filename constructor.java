@@ -23,3 +23,22 @@ System.out.println(o1.num);
 }
 }
 
+
+//overloading
+import java.util.*;
+class over
+{
+over()
+{
+System.out.println("Default constructor");
+}
+over(int n)
+{
+System.out.println("value of n is "+n);
+}
+public static void main(String agrs[])
+{
+over ob1=new over();
+over ob2=new over(7);
+}
+}
