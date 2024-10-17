@@ -1,0 +1,28 @@
+package age;
+public class EligibilityException extends Exception{
+public EligibilityException(String s)
+ {
+ super(s);
+ }
+ }
+
+
+
+import age.EligibilityException;
+import java.util.*;
+public class Throw2{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter your Age");
+int age=sc.nextInt();
+if(age<18)
+{
+throw new EligibilityException("Not Eligible to vote");
+}
+else{
+System.out.println("Eligible to vote");
+}
+}
+
+}
+
